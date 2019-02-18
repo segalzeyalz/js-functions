@@ -48,4 +48,3 @@ let arrayFuncs =  (() =>{ return {
 }})()
 
 let $Arr = arrayFuncs;
-console.log($Arr.sortNums([-5,-12,2,1,10,-7,5,2,-9,-63]))
