@@ -30,9 +30,22 @@ let arrayFuncs =  (() =>{ return {
             
         }
         return false
+    },
+    sortNums: (arr)=>{
+        let maxPos = arr.length-1;
+        while(maxPos>0){
+            for(let i=0; i<maxPos; i++){
+                if(arr[i]>arr[i+1]){
+                    let temp = arr[i+1];
+                    arr[i+1]=arr[i];
+                    arr[i]=temp;
+                }
+            }
+            --maxPos;
+        }
+        return arr;
     }
 }})()
 
 let $Arr = arrayFuncs;
-
-console.log($Arr.findSum([0,5],5))
+console.log($Arr.sortNums([-5,-12,2,1,10,-7,5,2,-9,-63]))
