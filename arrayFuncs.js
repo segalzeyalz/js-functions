@@ -45,6 +45,21 @@ let arrayFuncs =  (() =>{ return {
             --maxPos;
         }
         return arr;
+    },
+    sortNumsAsc: (arr)=>{
+        // Using bubble sort
+        let maxPos = arr.length-1;
+        while(maxPos>0){
+            for(let i=0; i<maxPos; i++){
+                if(arr[i]<arr[i+1]){
+                    let temp = arr[i+1];
+                    arr[i+1]=arr[i];
+                    arr[i]=temp;
+                }
+            }
+            --maxPos;
+        }
+        return arr;
     }
 }})()
 
