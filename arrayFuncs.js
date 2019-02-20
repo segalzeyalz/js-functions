@@ -32,6 +32,7 @@ let arrayFuncs =  (() =>{ return {
         return false
     },
     sortNums: (arr)=>{
+        // Using bubble sort
         let maxPos = arr.length-1;
         while(maxPos>0){
             for(let i=0; i<maxPos; i++){
