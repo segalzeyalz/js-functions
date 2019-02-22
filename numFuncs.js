@@ -1,6 +1,6 @@
 let numFuncs =  (() =>{ return {
-    add: (a,b) =>{
-        return a+b;
+    isInteger: (a) =>{
+        return a%1===0;
     }
 }
 })()
