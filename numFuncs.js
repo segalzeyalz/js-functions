@@ -3,15 +3,13 @@ let numFuncs =  (() =>{ return {
         return a%1===0;
     },
     biggestDivider: (a,b)=>{
-        let temp
+        if(b===0){
+            return a;
+        }
         if(a>b){
-            if(a%b===0){
-                return b;
-            }
-        } else{
-            if(b%a===0){
-                return a;
-            }
+            return numFuncs.biggestDivider(b, a%b)
+        }else{
+            return numFuncs.biggestDivider(a, b%a)
         }
     }
 }
