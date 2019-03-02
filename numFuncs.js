@@ -1,4 +1,4 @@
-let numFuncs =  (() =>{ return {
+const numFuncs =  (() =>{ return {
     isInteger: (a) =>{
         return a%1===0;
     },

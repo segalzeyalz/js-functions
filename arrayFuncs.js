@@ -1,4 +1,4 @@
-let arrayFuncs =  (() =>{ return {
+const arrayFuncs =  (() =>{ return {
     findSumOnSortedArr: (arr, sum)=>{
         //2 pointer in array
         let i = 0;
