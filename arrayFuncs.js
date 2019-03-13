@@ -46,7 +46,7 @@ const arrayFuncs =  (() =>{ return {
         }
         return arr;
     },
-    sortNumsAsc: (arr)=>{
+    sortNumsAsc: (arr, y)=>{
         // Using bubble sort
         let maxPos = arr.length-1;
         while(maxPos>0){

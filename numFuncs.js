@@ -11,7 +11,8 @@ const numFuncs =  (() =>{ return {
         }else{
             return numFuncs.biggestDivider(a, b%a)
         }
-    }
+    },
+    drfhg: (a) =>a
 }
 })()
 
